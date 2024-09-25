@@ -135,7 +135,69 @@ html {
   margin-top: 5px;
 }
 
+@media screen and (max-width: 1240px) {
 
+  .project-item {
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .project-item:nth-child(3n) {
+    margin-right: 0; /* Removes right margin for every third item */
+  }
+  .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 910px) {
+
+  .project-item {
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .project-item:nth-child(3n) {
+    margin-right: 0; /* Removes right margin for every third item */
+  }
+  .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .project-item {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .project-item:nth-child(3n) {
+    margin-right: 0; /* Removes right margin for every third item */
+  }
+  .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 619px) {
+  .project-item {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .project-item:nth-child(3n) {
+    margin-right: 0; /* Removes right margin for every third item */
+  }
+  .project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+}
 /* Form Styling */
 form input,
 form textarea {
