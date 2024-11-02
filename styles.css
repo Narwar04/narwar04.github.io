@@ -50,7 +50,7 @@ html {
 }
 
 /* Media query for screens smaller than 600px */
-@media screen and (max-width: 1000px)  {
+@media screen and (max-width: 1000px) {
   .about-container {
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center align on smaller screens */
@@ -102,10 +102,6 @@ html {
   color: #e0e0e0; /* Light gray text */
 }
 
-.stars {
-  color: #ffcc00; /* Gold stars */
-}
-
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -136,7 +132,6 @@ html {
 }
 
 @media screen and (max-width: 1240px) {
-
   .project-item {
     width: 300px;
     margin-right: 10px;
@@ -152,7 +147,6 @@ html {
   }
 }
 @media screen and (max-width: 910px) {
-
   .project-item {
     width: 250px;
     margin-right: 10px;
@@ -194,7 +188,7 @@ html {
   }
   .project-image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
   }
 }
@@ -292,3 +286,67 @@ nav ul li a:hover {
   color: #bb86fc; /* Light purple hover effect */
 }
 
+/* Skills Section Styling */
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: rgba(31, 31, 36, 0.5);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  background-color: rgba(31, 31, 36, 0.7);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.skill-header h2 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.skill-item {
+  background-color: rgba(55, 65, 81, 0.5);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+.skill-item:hover {
+  background-color: rgba(55, 65, 81, 0.8);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
