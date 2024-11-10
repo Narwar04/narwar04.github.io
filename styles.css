@@ -4,7 +4,6 @@ body {
   color: #e0e0e0; /* Light gray for text */
   padding: 0;
   margin: 0;
-  cursor: url("images/logo.png"), auto;
 }
 html {
   scroll-behavior: smooth;
