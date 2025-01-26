@@ -458,3 +458,26 @@ nav ul li a:hover {
     padding: 1rem;
   }
 }
+
+.custom-shape-divider-bottom-1731516086 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1731516086 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 103px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1731516086 .shape-fill {
+  fill: #131316;
+}
+
